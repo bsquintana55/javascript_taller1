@@ -44,50 +44,57 @@
         alert(`El primer caracter de la palabra digitada ${palabra} es ${result}`);
     });
 
+  
 
-//2 temperature
+//2
+const temperature = document.getElementById('cal');
+temperature.addEventListener('click', ()=>{
 
-    
-        temperature.addEventListener('click', () =>{
-            //opcion de usuario
-            const opcion = document.getElementById('opcioon').value;
-            parseInt(opcion)
-            //input
-            const tempe = document.getElementById('tempe').value;
-            parseFloat(tempe)
-            let grado
-            parseFloat(grado)
-            //faren a cel
-            if (opcion==1) {
-                grado=((5(tempe-32))/9)
+      const opcion = document.getElementById('opcion').value;
+      const usua = document.getElementById('tempe').value
+      parseInt(opcion);
+      parseFloat(usua);
+      
+      if (opcion==1) {
+       const grado=((5*(usua-32))/9);
+       alert(`los ${usua} grados Fahrenheit a Celsius son: ${grado}`);
 
-            } 
-            // fran a kel
-            else if (opcion==2) {
-                grado=(((5(tempe-32))/9)+273.15)
-            } 
-            //cel a faren
-            else if (opcion==3){
-                grado=(((9*tempe)/5)+32)
+    } 
+    // fran a kel
+    else if (opcion==2) {
+        const grado=(((5*(usua-32))/9)+273.15);
+        alert(`los ${usua} grados Fahrenheit a Kelvin son: ${grado}`);
 
-            } 
-            //cel a kel
-            else if (opcion==4){
-                grado=(grado+273.15)
-                
-            } 
-            //kel a faren
-            else if (opcion==5){
-                grado=(((9(tempe-273.15))/5)+32)
-
-            } 
-            //kel a cel
-            else if (opcion==6){
-                grado=(tempe-273.15)
-
-            }
+    } 
+    //cel a faren
+    else if (opcion==3){
+        const grado=(((9*usua)/5)+32);
+        alert(`los ${usua} grados Celsius a Fahrenheit son: ${grado}`);
 
 
-        })
+    } 
+    //cel a kel
+    else if (opcion==4){
+        const  grado=(usua+273.15);
+        alert(`los ${usua} grados Celsius a Kelvin son: ${grado}`);
+
+        
+    } 
+    //kel a faren
+    else if (opcion==5){
+        const grado=(((9*(usua-273.15))/5)+32);
+        alert(`los ${usua} grados Kelvin a Fahrenheit son: ${grado}`);
+
+    } 
+    //kel a cel
+    else if (opcion==6){
+        const  grado=(usua-273.15);
+        alert(`los ${usua} grados Kelvin a Celsius son: ${grado}`);
+
+
+    }
+})
+
+
 
 

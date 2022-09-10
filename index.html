@@ -235,54 +235,62 @@
           ♡ Kelvins <br>
         </p>
   <br>
+          
+  <label  class="fst-italic" for="">
+    Escriba la temperatura que desea cambiar: 
+   </label><br><br>
+  <input type="text" name="tempe" id="tempe" size="30px">
 
-        <label  class="fst-italic" for="">
-          Escriba la temperatura que desea cambiar: 
-         </label><br><br>
-        <input type="text" name="tempera" id="tempe" size="30px">
-       
+      <button id="cal"  style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;"
+      >Calcular</button>
 
       </div> <br>
+            
 
       <div class="row">
+  
+
           <!--COLUMNAS-->
-          <div class="col-lg-6">
+        <div class="col-lg-6">
 
-            <h3 class="resume-title">DESEAS CONVERTIR</h3>
-            
-            <div class="counts container">
-  
-              <div class="counts container"> <!--contendor -->
-  
-                <div class="mt-5 mt-lg-0">
-                 <div class="count-box" id="opcion">
-                  <i class="bi bi-thermometer-half"></i>
-       
+          <h3 class="resume-title">DESEAS CONVERTIR</h3>
+          
+          <div class="counts container">
 
-                   <span data-purecounter-start="0" data-purecounter-end="4444" data-purecounter-duration="1" class="purecounter"></span>
+            <div class="counts container"> <!--contendor -->
 
-                  
-                    <button id="opcioon" class="fst-italic"  value="1">Fahrenheit a Celsius</button><br><br>
-                    <button id="opcioon" class="fst-italic" value="2">Fahrenheit a Kelvin</button><br><br>
-   
-                    <button id="opcioon" class="fst-italic" value="3">Celsius a Fahrenheit</button><br><br>
-                    <button id="opcioon" class="fst-italic" value="4">Celsius a Kelvin</button><br><br>
-   
-                    <button id="opcioon" class="fst-italic" value="5">Kelvin a Fahrenheit</button><br><br>
-                    <button id="opcioon" class="fst-italic" value="6">Kelvin a Fahrenheit</button><br><br>
-                 
-                
-                  
-                  </div>
-               </div>
-               </div> <!--contenedor--> 
-            
-          </div> <!--termina el cosito cada uno-->
-        </div><!--Cierrq columnas-->
+              <div class="mt-5 mt-lg-0">
+               <div class="count-box">
+                <i class="bi bi-thermometer-half"></i>
+     
+              
+                <select   style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;"
+                 name="opcion" id="opcion" class="form-select" >
+ 
+                  <option id="faren1" class="fst-italic"   style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;" value="1">Fahrenheit a Celsius</option<br><br>
+                  <option id="faren2" class="fst-italic"  style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;" value="2">Fahrenheit a Kelvin</option><br><br>
+ 
+                  <option id="cel1" class="fst-italic"   style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;"value="3">Celsius a Fahrenheit</option><br><br>
+                  <option id="cel2" class="fst-italic"   style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;"value="4">Celsius a Kelvin</option><br><br>
+ 
+                  <option id="kel1" class="fst-italic"  style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;" value="5">Kelvin a Fahrenheit</option><br><br>
+                  <option id="kel2" class="fst-italic"   style="background-color: rgb(88, 18, 9); border: 1px solid rgb(26, 0, 0); font-family: 'Times New Roman', Times, serif; color: #ffff;"value="6">Kelvin a Celsius</option><br><br>
+               
 
+                </select>
+    
+              
+                </div>
+             </div>
+             </div> <!--contenedor--> 
           
         </div> <!--termina el cosito cada uno-->
       </div><!--Cierrq columnas-->
+
+
+    
+
+
     </div> 
   </section><!-- End Resume Section -->
 
