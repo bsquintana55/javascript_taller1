@@ -98,6 +98,25 @@
     //3
 
 
-    
+        const triangulo = document.getElementById('trian');
+        triangulo.addEventListener('click', () =>{
 
+            let lado1 = document.getElementById('ladoiz').value;
+            parseFloat(lado1)
+            let lado2 = document.getElementById('ladode').value;
+            parseFloat(lado2)
+            let lado3 = document.getElementById('ladoaba').value;
+           parseFloat(lado3)
 
+           if (lado1==lado2 && lado1==lado3) {
+            alert(`Su triangulo es equilatero, ya que todos los lados son del mismo tamaño`)
+           
+           } else if( lado1==lado2 || lado2==lado3 || lado1==lado3) {   
+            alert(`Su triangulo es isósceles, ya que dos de los lados son del mismo tamaño`)
+           
+           }
+           else {
+            alert(`Su triangulo es escaleno, ya que ninguno de los lados son del mismo tamaño`)
+           
+           }
+        })
