@@ -9,37 +9,37 @@
         const longitud = document.getElementById('longitud');
         longitud.addEventListener('click', ()=>{
 
-            const palabra = document.getElementById('palabra').value;
-            const result = palabra.length;
+            let palabra = document.getElementById('palabra').value;
+            let result = palabra.length;
             alert(`La longitud de las palabra digitada ${palabra} es ${result}`);
 
         });
     
         //mayuscula
-        const mayuscula = document.getElementById('mayuscula');
+        let mayuscula = document.getElementById('mayuscula');
 
         mayuscula.addEventListener('click', ()=>{
-            const palabra = document.getElementById('palabra').value;
-            const result = palabra.toUpperCase();
+            let palabra = document.getElementById('palabra').value;
+            let result = palabra.toUpperCase();
             alert(`La palabra digitada ${palabra} a mayúscula es ${result}`);
         });
 
 
         //minuscula
-        const minuscula = document.getElementById('minuscula');
+        let minuscula = document.getElementById('minuscula');
         minuscula.addEventListener('click', ()=>{
-            const palabra = document.getElementById('palabra').value;
-            const result = palabra.toLowerCase();
+            let palabra = document.getElementById('palabra').value;
+            let result = palabra.toLowerCase();
             alert(`La palabra digitada ${palabra} a minúscula es ${result}`);
         });
     
 
         //crarcter 1
-        const caracter = document.getElementById('caracter');
+        let caracter = document.getElementById('caracter');
         caracter.addEventListener('click', ()=>{
 
-            const palabra = document.getElementById('palabra').value;
-            const result = palabra.charAt();
+            let palabra = document.getElementById('palabra').value;
+            let result = palabra.charAt();
 
             alert(`El primer caracter de la palabra digitada ${palabra} es ${result}`);
         });
@@ -50,45 +50,45 @@
     const temperature = document.getElementById('cal');
     temperature.addEventListener('click', ()=>{
 
-        const opcion = document.getElementById('opcion').value;
-        const usua = document.getElementById('tempe').value
+        let opcion = document.getElementById('opcion').value;
+        let usua = document.getElementById('tempe').value
         parseInt(opcion);
         parseFloat(usua);
         
         if (opcion==1) {
-        const grado=((5*(usua-32))/9);
+        let grado=((5*(usua-32))/9);
         alert(`los ${usua} grados Fahrenheit a Celsius son: ${grado}`);
 
         } 
         // fran a kel
         else if (opcion==2) {
-            const grado=(((5*(usua-32))/9)+273.15);
+            let grado=(((5*(usua-32))/9)+273.15);
             alert(`los ${usua} grados Fahrenheit a Kelvin son: ${grado}`);
 
         } 
         //cel a faren
         else if (opcion==3){
-            const grado=(((9*usua)/5)+32);
+            let grado=(((9*usua)/5)+32);
             alert(`los ${usua} grados Celsius a Fahrenheit son: ${grado}`);
 
 
         } 
         //cel a kel
         else if (opcion==4){
-            const  grado=(usua+273.15);
+            let  grado=(usua+273.15);
             alert(`los ${usua} grados Celsius a Kelvin son: ${grado}`);
 
             
         } 
         //kel a faren
         else if (opcion==5){
-            const grado=(((9*(usua-273.15))/5)+32);
+            let grado=(((9*(usua-273.15))/5)+32);
             alert(`los ${usua} grados Kelvin a Fahrenheit son: ${grado}`);
 
         } 
         //kel a cel
         else if (opcion==6){
-            const  grado=(usua-273.15);
+            let  grado=(usua-273.15);
             alert(`los ${usua} grados Kelvin a Celsius son: ${grado}`);
 
 
@@ -156,26 +156,3 @@
 
 
 
-/*Acceder al botón para abrir el modal */
-
-let btnmodal=document.getElementById("modalCua");
-
-//Acceder ventana modal
-let venmodal=document.getElementById("ventanaModal");
-
-//Acceder al botón Cerrar de la ventana modal
-let cermodal=document.querySelector(".cerrarModal");
-
-btnmodal.addEventListener("click",()=>{
-    venmodal.style.display="block";
-})
-
-cermodal.addEventListener("click",()=>{
-    venmodal.style.display="none"; 
-})
-
-window.addEventListener("click",(e)=>{
-if(e.target==venmodal){
-    venmodal.style.display="none"; 
-}
-})

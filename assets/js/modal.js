@@ -6,7 +6,7 @@ let btnmodal=document.getElementById("abrirModal");
 let venmodal=document.getElementById("ventanaModal");
 
 //Acceder al botón Cerrar de la ventana modal
-let cermodal=document.querySelector(".cerrarModal");
+let cermodal=document.getElementById("cerrarModal");
 
 btnmodal.addEventListener("click",()=>{
     venmodal.style.display="block";
