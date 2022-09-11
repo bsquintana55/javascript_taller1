@@ -16,7 +16,7 @@
         });
     
         //mayuscula
-        const mayuscula = document.getElementById('mayuscula');
+        let mayuscula = document.getElementById('mayuscula');
 
         mayuscula.addEventListener('click', ()=>{
             let palabra = document.getElementById('palabra').value;
@@ -47,7 +47,7 @@
     
 
     //2
-    const temperature = document.getElementById('cal');
+    let temperature = document.getElementById('cal');
     temperature.addEventListener('click', ()=>{
 
         let opcion = document.getElementById('opcion').value;
@@ -98,7 +98,7 @@
     //3
 
 
-        const triangulo = document.getElementById('trian');
+        let triangulo = document.getElementById('trian');
         triangulo.addEventListener('click', () =>{
 
             let lado1 = document.getElementById('ladoiz').value;
@@ -123,7 +123,7 @@
 
 
 
-        const hallar = document.getElementById('hallar');
+        let hallar = document.getElementById('hallar');
         hallar.addEventListener('click', ()=>{   
 
       let nombre = document.getElementById('nombre').value;
@@ -152,6 +152,109 @@
                 alert("mmh no esta correcto, prueba otra vez ")
             }    
 })
+
+
+
+
+
+// 5
+
+
+//cuadrado
+let AC = document.getElementById('AC');
+AC.addEventListener('click',()=>{
+      let LC = document.getElementById('LC').value;
+      parseFloat(LC);
+      let r = (LC*LC);
+      alert(`El Área del cuadrado es: ${r}`)
+      
+})
+
+let PC = document.getElementById('PC');
+PC.addEventListener('click',()=>{
+      let DC = document.getElementById('DC').value;
+      parseFloat(DC);
+      let r = (DC*4);
+
+      alert(`El périmetro del cuadrado es: ${r}`)
+      
+})
+
+
+
+//triangulo
+let AT = document.getElementById('AT');
+AT.addEventListener('click', ()=>{
+      let BT = document.getElementById('BT').value;
+      let UT = document.getElementById('UT').value;
+      parseFloat(BT,UT)
+
+   let r = (BT*UT)/2;
+
+      alert(`El area del triangulo es: ${r}`);
+});
+
+let PT = document.getElementById('PT');
+PT.addEventListener('click', ()=>{
+      let L1 = document.getElementById('L1').value
+      let L2 = document.getElementById('L2').value
+      let L3 = document.getElementById('L3').value
+     parseInt(L1, L2, L3)
+
+      let r =  parseFloat(L1)+parseFloat(L2)+parseFloat(L3);
+
+      alert(`El perimetro del triangulo es: ${r}`);  
+});
+
+
+
+
+//Circulo
+let AI = document.getElementById('AI');
+const pi= 3.14
+ AI.addEventListener('click',()=>{
+
+      let RC = document.getElementById('RC').value;
+      parseInt(RC)
+      let r = pi* (parseFloat(RC)*2);
+
+      alert(`El area del circulo es: ${r.toFixed(2)}`);
+
+ });    
+
+ let PI = document.getElementById('PI');
+ PI.addEventListener('click',()=>{
+      let I = document.getElementById('I').value;
+
+      let r = (pi*2)*parseFloat(I);
+      alert(`El perimetro del circulo es: ${r.toFixed(2)}`);
+ });
+
+
+
+
+
+
+//rectangulo
+let AR = document.getElementById('RA');
+AR.addEventListener('click', ()=>{
+      let BR = document.getElementById('BR').value;
+      let AR = document.getElementById('AR').value;
+      
+      r= parseFloat(BR)*parseFloat(AR);
+      alert(`La base del rectangulo es: ${r}`);
+});
+
+let PR = document.getElementById('PR');
+PR.addEventListener('click', ()=>{
+      let BP = document.getElementById('BP').value;
+      let AP = document.getElementById('AP').value;
+     
+      r= (parseFloat(BP)+parseFloat(AP))*2;
+      alert(`El perimetro del rectangulo es: ${r}`);
+})
+
+
 
 
 
