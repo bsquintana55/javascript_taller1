@@ -12,7 +12,7 @@
     font-size: 25px;
 }
 
-.contenidoModal{
+.contenido{
     background-color: #520000;
     width: 60%;
     margin: auto;
@@ -22,21 +22,29 @@
     animation-duration: 0.5s;
 }
 
+
+
+
+
+
+
 @keyframes animarmodal {
     from {top: -300px; opacity: 0;}
     to{top: 0; opacity: 1;}
 }
-.cerrarModal{
+.areacerrar{
     font-size: 2rem;
     float: right;  
 }
 
-.cerrarModal:hover{
-    cursor: pointer;
-
+.pericerrar{
+    font-size: 2rem;
+    float: right;  
 }
 
-.contenidoModal h2{
+
+
+.contenido h2{
     background-color: rgb(184, 114, 0);
     font-family: 'Times New Roman', Times, serif;
     color: #FFFFFF;
@@ -44,3 +52,9 @@
     text-align: center;
     clear: both;
 }
+
+
+
+
+
+ 

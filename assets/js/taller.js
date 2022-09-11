@@ -6,7 +6,7 @@
         //1 de palabras
 
         //longitus
-        const longitud = document.getElementById('longitud');
+        let longitud = document.getElementById('longitud');
         longitud.addEventListener('click', ()=>{
 
             let palabra = document.getElementById('palabra').value;
@@ -16,7 +16,7 @@
         });
     
         //mayuscula
-        let mayuscula = document.getElementById('mayuscula');
+        const mayuscula = document.getElementById('mayuscula');
 
         mayuscula.addEventListener('click', ()=>{
             let palabra = document.getElementById('palabra').value;

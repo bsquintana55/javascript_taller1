@@ -472,14 +472,15 @@
 
 
 
-                  <button id="abrirModal" class="btn btn-warning" >
-                    Area</button>
+                  <button id="areac" class="btn btn-warning" >
+                    Área</button>
 
-                   
-                  <button type="button" class="btn btn-warning">Warning</button>
+                  <button id="perimetro" class="btn btn-warning" >
+                    Perímetro</button>
+  
+                  
                   </div>
               </div>
-
             </div>
 
       
@@ -491,28 +492,48 @@
                 <img src="/assets/img/tri.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title" style="color: #ffae00;">Triangulo</h5>
-                  <button type="button" class="btn btn-warning">Warning</button>
-                  <button type="button" class="btn btn-warning">Warning</button>
+
+                  <button id="areat" class="btn btn-warning" >
+                    Área</button>
+
+                  <button id="pert" class="btn btn-warning" >
+                    Perímetro</button>
                    </div>
               </div>
             </div>
+
+
+
             <div class="col">
               <div class="card bg-transparent border-warning mb-3">
                 <img src="/assets/img/circu.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title" style="color: #ffae00;  ">Circulo</h5>
-                  <button type="button" class="btn btn-warning">Warning</button>
-                  <button type="button" class="btn btn-warning">Warning</button>
+                  
+                  
+                  <button id="areal" class="btn btn-warning" >
+                    Área</button>
+
+                  <button id="peril" class="btn btn-warning" >
+                    Perímetro</button>
                    </div>
               </div>
             </div>
+
+            
             <div class="col">   
               <div class="card bg-transparent border-warning mb-3">
                 <img src="/assets/img/rec.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title" style="color: #ffae00;">Rectangulo</h5>
-                  <button type="button" class="btn btn-warning">Warning</button>
-                  <button type="button" class="btn btn-warning">Warning</button>
+                
+                  <button id="arear" class="btn btn-warning" >
+                    Área</button>
+
+                  <button id="perir" class="btn btn-warning" >
+                    Perímetro</button>
+
+
                    </div>
               </div>
             </div>
@@ -521,19 +542,194 @@
       </div>
 
 
-      <div id="ventanaModal" class="modal">
-          <div class="contenidoModal">
-              <span class="cerrarModal"><i class="fa-soli d fa-xmark"></i></span>
+
+
+
+
+
+
+
+
+
+<!--  CUADRADOOOOOOOOOO -->
+      <div id="ventanaARE" class="modal">
+          <div class="contenido">
+              <span class="areacerrar"><i class="fa-soli d fa-xmark"></i></span>
              
               <h2>Area del Cuadrado</h2><br><br>
-              <label for="bas" >Digite el lado:</label><br>
-              <input type="text" id="basi" class="form-control"><br>
-              <button id="ArecCuadra" class="btn btn-dark">Calcular</button>
-
-              <button id="cerrarModal" class="">Calcular</button>
+              <label for="" >Digite el lado:</label><br>
+              <input type="text" id="" class="form-control"><br>
+              <button id="" class="btn btn-dark">Calcular</button>
+              <button id="areacerrar" class="btn btn-dark" style="margin-left: 30px;">cerrar</button>
 
             </div>
       </div>
+
+      <div id="ventanaPERI" class="modal">
+        <div class="contenido">
+            <span class="pericerrar"><i class="fa-soli d fa-xmark"></i></span>
+           
+            <h2>Perimetro del Cuadrado</h2><br><br>
+            <label for="" >Digite el lado:</label><br>
+            <input type="text" id="" class="form-control"><br>
+            <button id="" class="btn btn-dark">Calcular</button>
+            <button id="pericerrar" class="btn btn-dark" style="margin-left: 30px;">cerrar</button>
+
+          </div>
+    </div>
+
+   
+
+
+
+<!--  TRIANGULOOOOOOOOOOOOOOOOOOOOO -->
+            <!--AREA-->
+            <div id="venareaT" class="modal">
+              <div class="contenido">
+                  <span class="areacerrarT"><i class="fa-soli d fa-xmark"></i></span>
+                
+                <h2>Área del Triangulo</h2><br><br>
+
+                <label for="">Digite la base:</label>
+                <input type="text" id="" class="form-control"><br>
+
+                <label for="">Digite la altura:</label>
+                <input type="text" id="" class="form-control"><br>
+<br>
+                <button id="" class="btn btn-dark">Calcular</button>
+                
+                <button id="areacerrarT" class="btn btn-dark" style="margin-left: 30px;">cerrar</button>
+
+                </div>
+            </div>
+
+            <!--PERIMETRO-->
+            <div id="venperiT" class="modal">
+            <div class="contenido">
+                <span class="pericerrarT"><i class="fa-soli d fa-xmark"></i></span>
+              
+                <h2>Perimetro del Triangulo</h2> <br>
+                <label for="">Digite el lado 1:</label>
+                <input type="text" id="" class="form-control"><br>
+
+                <label for="">Digite el lado 2:</label>
+                <input type="text" id="" class="form-control"><br>
+
+                <label for="">Digite el lado 3:</label>
+                <input type="text" id="" class="form-control">
+<br>
+                <button id="" class="btn btn-dark">Calcular</button>
+                <button id="pericerrarT" class="btn btn-dark" style="margin-left: 30px;">cerrar</button>
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+            
+
+<!--  CIRCULOOOOOOOOOOOOOOOOOOOOO -->
+            <!--AREA-->
+            <div id="venareL" class="modal">
+              <div class="contenido">
+                  <span class="areacerrarL"><i class="fa-soli d fa-xmark"></i></span>
+                
+                <h2>Área del Circulo</h2><br><br>
+
+                <label for="radio">Digite el radio:</label>
+                <input type="text" id="radio" class="form-control">
+
+<br>
+                <button id="" class="btn btn-dark">Calcular</button>
+                
+                <button id="areacerrarL" class="btn btn-dark" style="margin-left: 30px;">cerrar</button>
+
+                </div>
+            </div>
+
+            <!--PERIMETRO-->
+            <div id="venperiL" class="modal">
+            <div class="contenido">
+                <span class="pericerrarL"><i class="fa-soli d fa-xmark"></i></span>
+              
+                <h2>Perimetro del Circulo</h2> <br>
+
+                <label for="radio">Digite el radio:</label>
+                <input type="text" id="radio" class="form-control">
+
+<br>
+                <button id="" class="btn btn-dark">Calcular</button>
+                <button id="pericerrarL" class="btn btn-dark" style="margin-left: 30px;">cerrar</button>
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       
+
+<!--  RECTANGULOOOOOOOOOOOOOOOOOO -->
+            <!--AREA-->
+            <div id="venareR" class="modal">
+              <div class="contenido">
+                  <span class="areacerrarR"><i class="fa-soli d fa-xmark"></i></span>
+                
+                <h2>Área del Rectangulo</h2><br><br>
+
+                 <label for="bas">Digite la base:</label>
+                <input type="text" id="bas" class="form-control">
+                <label for="alt">Digite la altura:</label>
+                <input type="text" id="alt" class="form-control">
+<br>
+                <button id="" class="btn btn-dark">Calcular</button>
+                
+                <button id="areacerrarR" class="btn btn-dark" style="margin-left: 30px;">cerrar</button>
+
+                </div>
+            </div>
+
+            <!--PERIMETRO-->
+            <div id="venperiR" class="modal">
+            <div class="contenido">
+                <span class="pericerrarR"><i class="fa-soli d fa-xmark"></i></span>
+              
+                <h2>Perimetro del Rectangulo</h2> <br>
+                
+                <label for="bas">Digite la base:</label>
+                <input type="text" id="bas" class="form-control">
+                <label for="alt">Digite la altura:</label>
+                <input type="text" id="alt" class="form-control">
+
+<br>
+                <button id="" class="btn btn-dark">Calcular</button>
+                <button id="pericerrarR" class="btn btn-dark" style="margin-left: 30px;">cerrar</button>
+
+              </div>
+            </div>
+
+
+
+
+
+
+
 
 
     </div>
