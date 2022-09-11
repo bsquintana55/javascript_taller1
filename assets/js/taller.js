@@ -120,3 +120,35 @@
            
            }
         })
+
+
+
+        const hallar = document.getElementById('hallar');
+        hallar.addEventListener('click', ()=>{   
+
+      let nombre = document.getElementById('nombre').value;
+      parseInt(nombre)
+      let apellido = document.getElementById('apellido').value;
+      parseInt(apellido)
+      let materia = document.getElementById('materia').value;
+      parseInt(materia)
+
+
+            if(nombre==1 && apellido==1 && materia==1){
+                alert("Has elegido bien, felicidades ")
+            }else if(nombre==2 && apellido==2 && materia==2){
+                alert("Has elegido bien, felicidades ")
+            }else if(nombre==3 && apellido==3 && materia==3){
+                alert("Has elegido bien, felicidades ")
+            }else if(nombre==4 && apellido==4 && materia==4){
+                alert("Has elegido bien, felicidades ")
+            }else if(nombre==5 && apellido==5 && materia==5){
+                alert("Has elegido bien, felicidades ")
+            }else if(nombre==6 && apellido==6 && materia==6){
+                alert("Has elegido bien, felicidades ")
+            }else if(nombre==7 && apellido==7 && materia==7 || materia==8){
+                  alert("Has elegido bien, felicidades ")
+            }else{
+                alert("mmh no esta correcto, prueba otra vez ")
+            }    
+})
