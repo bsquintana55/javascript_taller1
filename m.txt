@@ -1,0 +1,95 @@
+
+const verify = document.getElementById('cal');
+verify.addEventListener('click', ()=>{
+      const dato = document.getElementById('opcion').value;
+      const grado = document.getElementById('input').value
+      parseInt(dato);
+      if(dato==1){       
+                  const valor = parseFloat(grado) + 273.15;
+                  alert(`los ${grado} grados celsius a kelvin son: ${valor}`)
+      }else if(dato==2){
+            const valor = (parseFloat(grado)*1.8) + 32;
+                  alert(`los ${grado} grados celsius a Fahrenheit son: ${valoi	r}`);
+      }else if(dato == 3){
+
+            const valor = (parseFloat(grado)-32) * (5/9);
+            alert(`los ${grado} grados Fahrenheit a celsius son: ${valor.toFixed(2)}`);
+      
+
+}else if(dato == 4){
+            const valor = (parseFloat(grado)-32)*(5/9) + 273.15;
+            alert(`los ${grado} grados Fahrenheit a kelvin son: ${valor.toFixed(2)}`);      
+      }else if(dato == 5){
+            const valor = (parseFloat(grado)-273.15)*(9/5) + 32;
+            alert(`los ${grado} grados kelvin a Fahrenheit son: ${valor.toFixed(2)}`);  
+      }else if(dato == 6){
+            const valor = (parseFloat(grado)-273.15);
+            alert(`los ${grado} grados kelvin a celcius son: ${valor.toFixed(2)}`);  
+      }
+})
+
+<div class="ret">
+<h1 class="tit">Convertir grados</h1>
+
+<select name="opci" id="grados" class="form-select" aria-label="Disabled select example" >
+      
+      <option id="kelvin" value="1">Celcius a kelvin</option>
+      <option id="Fahrenheit" value="2">Celcius a Fahrenheit</option>
+      <option id="celcius" value="3">Fahrenheit a celcius</option>
+      <option id="kelvin2" value="4">Fahrenheit a kelvin</option>
+      <option id="Fahrenheit2" value="5">kelvin a Fahrenheit</option>
+      <option id="celcius2" value="6">kelvin a celcius</option>          
+
+
+</select>
+<label for="grados">Ingrese los grados:</label>
+<input type="text" id="inf" class="form-control">
+
+<button id="cal" class="btn btn-dark">Calcular</button>
+
+faren
+c= ((5(f-32))/9)
+k= (((5(f-32))/9)+273.15)
+
+cel
+f= (((9*c)/5)+32)
+k= (c+273.15)
+
+kel
+f=(((9(k-273.15))/5)+32)
+c=(k-273.15)
+
+
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+

@@ -750,13 +750,186 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>apunto-6</h2>
-        <p>apunto-6 Me</p>
+        <h2>Ejercicio 6</h2>
+        <p>Formulario Validaciones</p>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="formu">
+  
+      <form action="" method="post" class="formulario" id="formulario">
+
+<div class="row ">
+
+        <div class="form-group col-md-6"> <!-- tipo doc -->
+          <label for="state_id" class="control-label">Tipo de Documento</label>
+          <select class="form-control" id="TDoc">
+              <div class="opcion">
+              <option value="CC">Cédula de Ciudadanía</option>
+              <option value="CE">Cedula Extranjeria </option>
+              <option value="AL">Cedula Extranjeria Colombiana</option>
+              <option value="P">Pasaporte</option>
+            </div>
+          </select>    
+        </div>
+
+<br>
+
+        <div class="form-group col-md-6"> <!-- documento -->
+
+              <div class="formulario__grupo" id="grupo__documento">
+                  <label for="full_document_id" class="control-label">No. Documento</label>
+
+                  <div class="formulario__grupo-input">
+
+                      <input type="text" class="formulario__input"id="NDoc" name="full_docu" placeholder="Numero de Documento">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+
+                  </div><!-- div del input-->
+
+				      <p class="formulario__input-error">El numero de documento solo podra tener numeros y tiene un minimo de 5 caracteres.</p>
+              </div><!--div del grupo-->
+
+
+              </div><!--columnas-->
+
+        </div>  <!--row-->
+
+
+
+
+     
+        <div class="row ">
+        <div class="form-group col-md-6"> <!-- Full Name -->
+            <label for="full_nom_id" class="control-label">Nombre</label>
+            <input type="text" class="form-control" id="NM" name="full_name" placeholder="Nombre">
+        </div>  
+        
+        <br>
+
+        <div class="form-group col-md-6"> <!-- Full Name -->
+          <label for="full_apell_id" class="control-label">Apellido</label>
+          <input type="text" class="form-control" id="AP" name="full_apell" placeholder="Apellido">
+      </div>  
+      
+      <br>
+    
+      <div class="form-group col-md-6"> <!-- Full nacimiento -->
+        <label for="full_naci_id" class="control-label">Fecha de Nacimiento</label>
+        <input type="date" class="form-control" id="FNaci" name="full_naci" placeholder="Apellido">
+    </div>  
+    
+    <br>
+
+        <div class="form-group col-md-6"> <!-- Street 1 -->
+            <label for="correo_id" class="control-label">Correo</label>
+            <input type="text" class="form-control" id="CRR" name="correo" placeholder="Correo">
+        </div>    
+        
+        <br>
+                                
+        <div class="form-group col-md-6">
+          <label for="pwd">Contraseña:</label>
+          <input type="password" class="form-control" id="PSS">
+        </div>
+        
+          <br>
+
+          <div class="form-group col-md-6">
+            <label for="pwd">Compruebe su contraseña:</label>
+            <input type="password" class="form-control" id="EPSS">
+          </div>
+          
+            <br>
+
+  <br> <br>
+        <div class="checkbox">
+          <label ><input type="checkbox">    <button type="button" class="btn btn-link" id="modalTer">  Acepto Terminos de Uso</label> </button>
+        </div>
+ <br><br>
+
+        <div class="form-group"> <!-- ingresar Button -->
+            <button type="submit" class="btn btn-warning">Ingresar</button>
+        </div>     
+        
+    </form>
+  </div><!--formulario-->
+  </div>
+
+<!--modal terminos-->
+  <div id="ventaterm" class="modal">
+    <div class="termincont">
+        <span class="cerrarter"><i class="fa-soli d fa-xmark"></i></span>
+      
+      <h2>Terminos De Uso</h2><br>
+
+      <p>
+        Al acceder a este sitio Web y/o a cualquiera de sus páginas, usted (el usuario) 
+        acepta las condiciones y términos de uso que se indican a continuación. 
+        La navegación por este sitio le atribuye la condición de usuario e implica la aceptación plena 
+        y sin reservas de todas y cada una de las disposiciones incluidas en estas condiciones generales de uso,
+         por lo que, si no está de acuerdo con cualquiera de las condiciones aquí establecidas,
+         no deberá usar este sitio Web.
+
+      </p>
+
+<br>
+
+      <button id="cerrarter" class="btn btn-dark" style="margin-left: 30px;">cerrar</button>
+
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </div>
   </section><!-- End apunto-6 Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <div class="credits">
     <!-- All the links in the footer should remain intact. -->
@@ -779,6 +952,8 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/taller.js"></script>
   <script src="assets/js/modal.js"></script>
+ 
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
 </body>
 

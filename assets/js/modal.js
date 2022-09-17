@@ -207,3 +207,34 @@
     })
 
 
+
+
+
+
+
+
+
+     //MODAL DE TERMINOS
+    //boton  id
+    let modalTer = document.getElementById("modalTer");
+    //Acceder ventana modal del area
+    let ventaterm  = document.getElementById("ventaterm");
+    //Acceder al botón Cerrar de la ventana modal
+    let cerrarter = document.getElementById("cerrarter");
+
+    //boton y despues ventana
+    modalTer.addEventListener("click",()=>{
+        ventaterm.style.display="block";
+    })
+
+    cerrarter.addEventListener("click",()=>{
+        ventaterm.style.display="none"; 
+    })
+
+    window.addEventListener("click",(e)=>{
+    if(e.target==ventaterm){
+        ventaterm.style.display="none"; 
+    }
+    })
+
+

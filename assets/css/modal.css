@@ -57,4 +57,25 @@
 
 
 
- 
+.termincont{
+
+    background-color: #270404;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarmodal;
+    animation-duration: 0.5s;
+}
+
+.termincont p{
+
+    margin: 7px 36px 7px 36px;
+
+}
+
+
+.termincont h2{
+
+  margin: 15px 37px 7px 36px;
+}
