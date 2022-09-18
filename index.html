@@ -10,23 +10,24 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/logo_js.png" rel="icon">
-  <link href="assets/img/logo_js.png" rel="apple-touch-icon">
+  <link href="/assets/img/logo_js.png" rel="icon">
+  <link href="/assets/img/logo_js.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/modal.css">
+  <link href="/assets/css/modal.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/form.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Personal - v4.8.1
@@ -34,6 +35,9 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+
 </head>
 
 <body>
@@ -143,9 +147,7 @@
             <i class="bi bi-arrow-bar-right"></i>
             <span data-purecounter-start="0" data-purecounter-end="777" data-purecounter-duration="1" class="purecounter"></span>
 
-            <button id="longitud"
-
-             style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;">
+            <button id="longitud" class="btn btn-warning" >
             
              Longitud de Palabra</button>
           </div>
@@ -156,9 +158,7 @@
             <i class="bi bi-chevron-double-up"></i>
             <span data-purecounter-start="0" data-purecounter-end="777" data-purecounter-duration="1" class="purecounter"></span>
 
-            <button id="mayuscula" 
-
-            style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;">
+            <button id="mayuscula" class="btn btn-warning" >
               
             Palabra Mayuscula</button>
           </div>
@@ -170,8 +170,7 @@
             <span data-purecounter-start="0" data-purecounter-end="777" data-purecounter-duration="1" class="purecounter"></span>
 
             <button id="minuscula" 
-
-            style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;">
+            class="btn btn-warning" >
               
             Palabra Minuscula</button>
           </div>
@@ -182,11 +181,7 @@
             <i class="bi bi-badge-ad"></i>
             <span data-purecounter-start="0" data-purecounter-end="777" data-purecounter-duration="1" class="purecounter"></span>
 
-            <button id="caracter" 
-
-            style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;">
-             
-              Primer Caracter</button>
+            <button id="caracter" class="btn btn-warning" >Primer Caracter</button>
           </div>
         </div>
 
@@ -238,9 +233,8 @@
     Escriba la temperatura que desea cambiar: 
    </label><br><br>
   <input type="text" name="tempe" id="tempe" size="30px">
-
-      <button id="cal"  style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;"
-      >Calcular</button>
+<br><br>
+      <button id="cal" class="btn btn-warning"  >Calcular</button>
 
       </div> <br>
             
@@ -351,7 +345,7 @@
       <input type="text" name="or" id="ladoaba" size="30px"> <br>
 
       <br>
-      <button id="trian" style="background-color: rgb(88, 18, 9); border: 1px solid rgb(26, 0, 0); font-family: 'Times New Roman', Times, serif; color: #ffff;" > calcular </button>
+      <button id="trian" class="btn btn-warning"  > calcular </button>
 
     </div>
 <br><br>
@@ -403,47 +397,56 @@
       </p>
 
 <br>
-      
-        <select name="nombre" id="nombre" class="form-select"   style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;">
-        
+      <div id="punto4" class="punto4">
+
+ <select name="nombre" id="nombre" class="form-select"   style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;">
+        <div id="opciones" class="opciones">
               <option value="1">Adriana</option>
               <option value="2">Yaneth</option>
               <option value="3">Luis</option> 
               <option value="4">Cristian</option>            
               <option value="5">Carolina</option>
               <option value="6">Fernando</option>
-              <option value="7">Tatiana</option>         
+              <option value="7">Tatiana</option>  
+        </div>
         </select><br>
    
         <select name="apellido" id="apellido" class="form-select"  style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;">
-        
-              <option  value="5">Forero</option>
-              <option  value="7">Cabrera</option>
-              <option  value="1">Duarte</option>
-              <option  value="3">Baquero</option> 
-              <option  value="2">Castillo</option>    
-              <option  value="6">Galindo</option>   
-              <option  value="4">Buitrago</option>     
+          <div id="opciones" class="opciones">
+              <option id="opcion" value="5">Forero</option>
+              <option  id="opcion" value="7">Cabrera</option>
+              <option  id="opcion" value="1">Duarte</option>
+              <option  id="opcion" value="3">Baquero</option> 
+              <option  id="opcion"  value="2">Castillo</option>    
+              <option  id="opcion"  value="6">Galindo</option>   
+              <option  id="opcion" value="4">Buitrago</option>  
+              
+          </div> 
         </select><br>
         
         <select name="materia" id="materia" class="form-select"  style="background-color: rgb(88, 18, 9); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;">
-        
-               <option  value="6">Base de datos</option>
-               <option  value="7">Front-end</option>
+          <div id="opciones" class="opciones">
+              <option  value="6">Base de datos</option>
+              <option  value="7">Front-end</option>
               <option  value="1">Diseño</option>  
               <option  value="8">Calidad</option> 
               <option  value="2">Gestión ambiental</option>
               <option  value="4">PHP</option>   
               <option  value="3">Cultura fisica</option>  
-              <option  value="5">Proyecto</option>      
+              <option  value="5">Proyecto</option>  
+            </div>    
         </select>
 
         <br>
-        <button id="hallar" style="background-color: rgb(149, 65, 1); border: 1px solid #ffff; font-family: 'Times New Roman', Times, serif; color: #ffff;">
-          Probar</button>
+        <button id="hallar" class="btn btn-warning" >Probar</button>
 
 
 
+
+
+
+      </div>
+       
 
 
       </div>
@@ -468,7 +471,7 @@
               <div class="card bg-transparent  border-warning mb-3">
                 <img src="/assets/img/cua.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title" style="color: #ffae00;">Cuadrado</h5>
+                  <h5 class="card-title" >Cuadrado</h5>
 
 
 
@@ -491,7 +494,7 @@
               <div class="card bg-transparent  border-warning mb-3">
                 <img src="/assets/img/tri.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title" style="color: #ffae00;">Triangulo</h5>
+                  <h5 class="card-title" >Triangulo</h5>
 
                   <button id="areat" class="btn btn-warning" >
                     Área</button>
@@ -508,7 +511,7 @@
               <div class="card bg-transparent border-warning mb-3">
                 <img src="/assets/img/circu.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title" style="color: #ffae00;  ">Circulo</h5>
+                  <h5 class="card-title" >Circulo</h5>
                   
                   
                   <button id="areal" class="btn btn-warning" >
@@ -525,7 +528,7 @@
               <div class="card bg-transparent border-warning mb-3">
                 <img src="/assets/img/rec.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title" style="color: #ffae00;">Rectangulo</h5>
+                  <h5 class="card-title" >Rectangulo</h5>
                 
                   <button id="arear" class="btn btn-warning" >
                     Área</button>
@@ -767,103 +770,130 @@
 
 <div id="formu">
   
-      <form action="" method="post" class="formulario" id="formulario">
-
-<div class="row ">
-
-        <div class="form-group col-md-6"> <!-- tipo doc -->
-          <label for="state_id" class="control-label">Tipo de Documento</label>
-          <select class="form-control" id="TDoc">
-              <div class="opcion">
-              <option value="CC">Cédula de Ciudadanía</option>
-              <option value="CE">Cedula Extranjeria </option>
-              <option value="AL">Cedula Extranjeria Colombiana</option>
-              <option value="P">Pasaporte</option>
-            </div>
-          </select>    
-        </div>
-
-<br>
-
-        <div class="form-group col-md-6"> <!-- documento -->
-
-              <div class="formulario__grupo" id="grupo__documento">
-                  <label for="full_document_id" class="control-label">No. Documento</label>
-
-                  <div class="formulario__grupo-input">
-
-                      <input type="text" class="formulario__input"id="NDoc" name="full_docu" placeholder="Numero de Documento">
-                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
-
-                  </div><!-- div del input-->
-
-				      <p class="formulario__input-error">El numero de documento solo podra tener numeros y tiene un minimo de 5 caracteres.</p>
-              </div><!--div del grupo-->
+                              <form action="" class="formulario" id="formulario">
 
 
-              </div><!--columnas-->
+                                <!-- Grupo: documento -->
+                                <div class="formulario__grupo" id="grupo__usuario">
 
-        </div>  <!--row-->
+                                  <label for="state_id" class="formulario__label">Tipo de Documento</label>
 
 
+                                  <div class="formulario__grupo-input">
+
+                                      <select class="formulario__input"  id="tipo" name="tipo" placeholder="documento" required>
+                                          <div class="opcion">
+                                          <option value="">Selecciones su Tipo de Doc.</option>
+                                          <option value="CC">Cédula de Ciudadanía</option>
+                                          <option value="CE">Cedula Extranjeria </option>
+                                          <option value="AL">Cedula Extranjeria Colombiana</option>
+                                          <option value="P">Pasaporte</option>
+                                        </div>
+                                      </select>    
+                                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+
+                                  </div>
+                                  <p class="formulario__input-error">Po.</p>
+                              </div>
 
 
-     
-        <div class="row ">
-        <div class="form-group col-md-6"> <!-- Full Name -->
-            <label for="full_nom_id" class="control-label">Nombre</label>
-            <input type="text" class="form-control" id="NM" name="full_name" placeholder="Nombre">
-        </div>  
-        
-        <br>
+                              <!-- Grupo: documento -->
+                              <div class="formulario__grupo" id="grupo__usuario">
 
-        <div class="form-group col-md-6"> <!-- Full Name -->
-          <label for="full_apell_id" class="control-label">Apellido</label>
-          <input type="text" class="form-control" id="AP" name="full_apell" placeholder="Apellido">
-      </div>  
-      
-      <br>
-    
-      <div class="form-group col-md-6"> <!-- Full nacimiento -->
-        <label for="full_naci_id" class="control-label">Fecha de Nacimiento</label>
-        <input type="date" class="form-control" id="FNaci" name="full_naci" placeholder="Apellido">
-    </div>  
-    
-    <br>
+                                  <label for="usuario" class="formulario__label">numero de documento</label>
 
-        <div class="form-group col-md-6"> <!-- Street 1 -->
-            <label for="correo_id" class="control-label">Correo</label>
-            <input type="text" class="form-control" id="CRR" name="correo" placeholder="Correo">
-        </div>    
-        
-        <br>
-                                
-        <div class="form-group col-md-6">
-          <label for="pwd">Contraseña:</label>
-          <input type="password" class="form-control" id="PSS">
-        </div>
-        
-          <br>
 
-          <div class="form-group col-md-6">
-            <label for="pwd">Compruebe su contraseña:</label>
-            <input type="password" class="form-control" id="EPSS">
-          </div>
-          
-            <br>
+                                  <div class="formulario__grupo-input">
 
-  <br> <br>
-        <div class="checkbox">
-          <label ><input type="checkbox">    <button type="button" class="btn btn-link" id="modalTer">  Acepto Terminos de Uso</label> </button>
-        </div>
- <br><br>
+                                      <input type="text" class="formulario__input" id="documento" name="documento" placeholder="documento" minlength="5" maxlength="10" required>
+                                      <i class="formulario__validacion-estado fas fa-times-circle"></i> 
 
-        <div class="form-group"> <!-- ingresar Button -->
-            <button type="submit" class="btn btn-warning">Ingresar</button>
-        </div>     
-        
-    </form>
-  </div><!--formulario-->
+                                  </div>
+                                  <p class="formulario__input-error">El numero de documento solo podra tener numeros y tiene un minimo de 5 caracteres.</p>
+                              </div>
+
+                              
+                              <!-- Grupo: Nombre -->
+                              <div class="formulario__grupo" id="grupo__nombre">
+                                  <label for="nombre" class="formulario__label">Nombre</label>
+                                  <div class="formulario__grupo-input">
+                                      <input type="text"class="formulario__input" id="nombre" name="nombre" placeholder="nombre">
+                                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                  </div>
+                                  <p class="formulario__input-error">El nombre solo puede contener letras</p>
+                              </div>
+
+                                <!-- Grupo: apellido -->
+                                <div class="formulario__grupo" id="grupo__apellido">
+                                  <label for="apellido" class="formulario__label">Apellido</label>
+                                  <div class="formulario__grupo-input">
+                                      <input type="text" class="formulario__input" id="apellido" name="apellido" placeholder="apellido">
+                                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                  </div>
+                                  <p class="formulario__input-error">El apellido solo puede contener letras.</p>
+                              </div>
+
+                              <!-- Grupo: Correo Electronico -->
+                              <div class="formulario__grupo" id="grupo__correo">
+                                  <label for="correo" class="formulario__label">Correo Electrónico</label>
+                                  <div class="formulario__grupo-input">
+                                      <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@misena.edu.co">
+                                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                  </div>
+                                  <p class="formulario__input-error">El correo debe ser con el dominio del sena.</p>
+                              </div>
+
+                              
+                              <!-- Grupo: fecha -->
+                              <div class="formulario__grupo" id="grupo__fecha">
+                                  <label for="fecha" class="formulario__label">Fecha</label>
+                                  <div class="formulario__grupo-input">
+                                      <input type="date" max="2002-12-31" class="formulario__input" name="fecha" id="fecha" placeholder="fecha">
+                                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                  </div>
+                                  <p class="formulario__input-error">El fecha debe ser mayor del 2002</p>
+                              </div>
+
+                              <!-- Grupo: Contraseña -->
+                              <div class="formulario__grupo" id="grupo__contraseña1">
+                                  <label for="contraseña1" class="formulario__label">Contraseña</label>
+                                  <div class="formulario__grupo-input">
+                                      <input type="password" class="formulario__input" name="contraseña1" id="contraseña1">
+                                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                  </div>
+                                  <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                              </div>
+
+                              <!-- Grupo: Contraseña 2 -->
+                              <div class="formulario__grupo" id="grupo__contraseña2">
+                                  <label for="contraseña2" class="formulario__label">Repetir Contraseña</label>
+                                  <div class="formulario__grupo-input">
+                                      <input type="password" class="formulario__input" name="contraseña2" id="contraseña2">
+                                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                  </div>
+                                  <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                              </div>
+
+                              
+
+
+                              <!-- Grupo: Terminos y Condiciones -->
+                              <div class="formulario__grupo" id="grupo__terminos">
+                                  <label class="formulario__label">
+                                      <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                                      <button type="button" class="btn btn-link" id="modalTer">  Acepto Terminos de Uso</label> </button>
+                                  </label>
+                              </div>
+
+                              <div class="formulario__mensaje" id="formulario__mensaje">
+                                  <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                              </div>
+
+                              <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                  <button type="submit" class="formulario__btn">Enviar</button>
+                                  <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                              </div>
+                            </form>
   </div>
 
 <!--modal terminos-->
@@ -895,35 +925,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   </section><!-- End apunto-6 Section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -948,12 +951,16 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+
+  
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/taller.js"></script>
   <script src="assets/js/modal.js"></script>
- 
-  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/form.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
 </body>
 

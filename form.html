@@ -10,6 +10,31 @@
 <body>
     <form action="" class="formulario" id="formulario">
 
+
+         <!-- Grupo: documento -->
+         <div class="formulario__grupo" id="grupo__usuario">
+
+            <label for="state_id" class="formulario__label">Tipo de Documento</label>
+
+
+            <div class="formulario__grupo-input">
+
+                <select class="formulario__input"  id="tipo" name="tipo" placeholder="documento" required>
+                    <div class="opcion">
+                    <option value="">Selecciones su Tipo de Doc.</option>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="CE">Cedula Extranjeria </option>
+                    <option value="AL">Cedula Extranjeria Colombiana</option>
+                    <option value="P">Pasaporte</option>
+                  </div>
+                </select>    
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+
+            </div>
+            <p class="formulario__input-error">Po.</p>
+        </div>
+
+
         <!-- Grupo: documento -->
         <div class="formulario__grupo" id="grupo__usuario">
 
@@ -18,8 +43,8 @@
 
             <div class="formulario__grupo-input">
 
-                <input type="text" class="formulario__input" id="documento" name="documento" placeholder="documento">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <input type="text" class="formulario__input" id="documento" name="documento" placeholder="documento" minlength="5" maxlength="10" required>
+                <i class="formulario__validacion-estado fas fa-times-circle"></i> 
 
             </div>
             <p class="formulario__input-error">El numero de documento solo podra tener numeros y tiene un minimo de 5 caracteres.</p>
@@ -56,6 +81,17 @@
             <p class="formulario__input-error">El correo debe ser con el dominio del sena.</p>
         </div>
 
+        
+        <!-- Grupo: fecha -->
+        <div class="formulario__grupo" id="grupo__fecha">
+            <label for="fecha" class="formulario__label">Fecha</label>
+            <div class="formulario__grupo-input">
+                <input type="date" max="2002-12-31" class="formulario__input" name="fecha" id="fecha" placeholder="fecha">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El fecha debe ser mayor del 2002</p>
+        </div>
+
         <!-- Grupo: Contraseña -->
         <div class="formulario__grupo" id="grupo__contraseña1">
             <label for="contraseña1" class="formulario__label">Contraseña</label>
@@ -67,10 +103,10 @@
         </div>
 
         <!-- Grupo: Contraseña 2 -->
-        <div class="formulario__grupo" id="grupo__password2">
-            <label for="password2" class="formulario__label">Repetir Contraseña</label>
+        <div class="formulario__grupo" id="grupo__contraseña2">
+            <label for="contraseña2" class="formulario__label">Repetir Contraseña</label>
             <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password2" id="password2">
+                <input type="password" class="formulario__input" name="contraseña2" id="contraseña2">
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
             <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
@@ -78,15 +114,6 @@
 
         
 
-        <!-- Grupo: Teléfono -->
-        <div class="formulario__grupo" id="grupo__fecha">
-            <label for="fecha" class="formulario__label">Fecha</label>
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="fecha" id="fecha" placeholder="fecha">
-                <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">El fecha solo puede contener numeros y el maximo son 14 dígitos.</p>
-        </div>
 
         <!-- Grupo: Terminos y Condiciones -->
         <div class="formulario__grupo" id="grupo__terminos">

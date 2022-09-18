@@ -14,6 +14,7 @@ body {
   color: #fff;
   position: relative;
   background: transparent;
+  
 }
 
 body::before {
@@ -187,6 +188,11 @@ h6 {
   }
 }
 
+.geometria-info{
+  text-align: center;
+}
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -285,7 +291,13 @@ h6 {
   .navbar ul {
     display: none;
   }
+
+  .opciones { 
+    width: 240px; height: 34px;
 }
+
+}
+
 
 .navbar-mobile {
   position: fixed;
@@ -336,10 +348,19 @@ h6 {
 
 
 
+h5 .card-title{
+  color: #ffae00;
+}
 
+.cards{
+  display: flex;
+  align-items: center;
+}
 
+.card-body{
 
-
+text-align: center;
+}
 
 
 
@@ -356,6 +377,8 @@ section {
   opacity: 0;
   transition: ease-in-out 0.4s;
   z-index: 2;
+
+
 }
 
 section.section-show {
@@ -583,6 +606,9 @@ section .container {
 
 
 
+/*--------------------------------------------------------------
+# color
+--------------------------------------------------------------*/
 
 
 
