@@ -7,8 +7,8 @@ const expresiones = {
     apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
     correo: /^[a-zA-Z0-9_.+-]+@+[misena]+.[edu]+.[c]+[o]$/,
     //fecha: /^[0-9]+[0-9]+[0-9]+[0-9]+[0000-2002]$/,
-    contraseña1:  /^.{4,12}$/, // 4 a 12 digitos.
-    contraseña2: /^.{4,12}$/, // 4 a 12 digitos.
+    contraseña1:  /^(([a-z]{1,})([A-Z]{1,})([0-9]{1,})){1,10}$/, // 4 a 12 digitos.
+    contraseña2: /^(([a-z]{1,})([A-Z]{1,})([0-9]{1,})){1,10}$/, // 4 a 12 digitos.
 
 
 }

@@ -4,7 +4,7 @@
 
 
         //1 de palabras
-
+ 
         //longitus
         let longitud = document.getElementById('longitud');
         longitud.addEventListener('click', ()=>{
@@ -149,10 +149,9 @@
             }else if(nombre==7 && apellido==7 && materia==7 || materia==8){
                   Swal.fire("Has elegido bien, felicidades ")
             }else{
-                Swal.fire("mmh no esta correcto, prueba otra vez ")
+                Swal.fire("mmh no esta correcto, prueba otra vez, tus respuestas estan mal")
             }    
 })
-
 
 
 
